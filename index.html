@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <script src="node_modules\p5\lib\p5.min.js"></script>
+        <script src="node_modules\collide2D\p5.collide2d.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <meta charset="utf-8" />
+    </head>
+    <body class="container-lg">
+        <header class="container-fluid p-2">
+            <section class="container-fluid">
+                <h1 class="row">Jogos clássicos: Pong com Javascript</h1>
+            </section>
+            <section class="container-fluid">
+                <form class="row">
+                    <div class="col-6">
+                        <label for="Jogadores" class="form-label">Email address</label>
+                        <select id="Jogadores" name="Jogadores"class="form-select" aria-label="Quantos jogadores?">
+                            <option value="computer" selected>1 Jogador</option>
+                            <option value="player">2 Jogadores</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="Dificuldade" class="form-label">Dificuldade</label>
+                        <select id="Dificuldade" name="Dificuldade" class="form-select" aria-label="Quantos jogadores?">
+                            <option value="2" selected>Fácil</option>
+                            <option value="3">Médio</option>
+                            <option value="5">Difícil</option>
+                            <option value="7">Muito difícil</option>
+                        </select>
+                    </div>
+                </form>
+            </section>
+        </header>
+        <main class="container-fluid p-2">
+            <section class="row">
+                <div class="col-9" id="game">
+                </div>
+                <div class="col-3">
+                    <h5 class="text-center">Use a barra de espaço para <b>pausar</b> / <b>despausar</b></h5>
+                    <h5 class="text-center">Movimentação das raquetes:</h5>
+                    <h6 class="text-center">Jogador 1</h6>
+                    <img class="img-thumbnail mx-auto d-block" src="./asdwx.png" alt="Letras de um teclado">
+                    <p class="text-center">Use as teclas W e S</p>
+                    
+                    <h6 class="text-center">Jogador 2</h6>
+                    <img class="img-thumbnail mx-auto d-block" src="./setas.png" alt="Letras de um teclado">
+                    <p class="text-center">Use as Setas</p>
+                </div>
+            </section>
+        </main>
+        <footer class="container-fluid">
+            <section class="row justify-content-center">
+                Desenvolvido com Javascript e P5* por Fernando Cortes
+            </section>
+        </footer>
+        <script src="pong.js"></script>
+    </body>
+</html>
