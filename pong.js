@@ -178,11 +178,11 @@ function checkRacquetColision(x, y){
 
 function addScore(){
 
-    if (xBall + radiusBall - 1 > distBorderP2 && point === false){
+    if (xBall + radiusBall > distBorderP2 + sizeRacquetX && point === false){
         poinstP1 += 1;        
         point = true;
         //ponto.play();
-    } else if (xBall - radiusBall + 1< distBorderP1 + sizeRacquetX && point === false){
+    } else if (xBall - radiusBall < distBorderP1  && point === false){
         poinstP2 += 1;
         point = true;
         //ponto.play();
